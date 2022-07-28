@@ -4,11 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atividades M1</title>
+    <title>Formulário Fake</title>
 </head>
+
 <body>
-    <h1>Coiso meu de novoa aa</h1>
-    <p>coiso menor</p>
-    <p>html aham</p>
+    <main>
+        <h1>Formulário Fake</h1>
+        <div>
+            <form>
+                <!-- NOME E EMAIL -->
+                <pre><label for="nome">Nome</label></pre>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome aqui..." required="true">
+
+                <pre><label for="email">E-mail</label></pre>
+                <input type="email" id="email" name="email" placeholder="Melhor e-mail..." required="true">
+
+                <br>
+                <label for="descricao">Descrição</label>
+
+                <!-- DESCRICAO -->
+
+                    <br>
+                        <textarea name="descricao" 
+                        id="descricao" 
+                        cols="25" 
+                        rows="10"
+                        placeholder="O que te fez escolher a Kenzie?"></textarea>
+                    </br>
+                </br>
+                <!-- MODULO -->
+
+                <label for="modulo">Módulo</label>
+                <select name="modulo" id="modulo" required="true">
+                    <option value="">Escolha Módulo</option>
+                    <option value="modulo-1">Módulo 1</option>
+                    <option value="modulo-2">Módulo 2</option>
+                    <option value="modulo-3">Módulo 3</option>
+                    <option value="modulo-4">Módulo 4</option>
+                </select>
+
+                <!-- SENHA COISA E TAL -->
+                <br><label for="senha">Senha</label></br>
+                <input type="password" id="senha" placeholder="Senha" required="true">
+
+                 <br><label for="ConfirmarSenha">Confirmar Senha</label></br>
+                 <input type="password" id="ConfimarSenha" placeholder="ConfirmarSenha" required="true">
+
+                 <footer>
+
+                    <p>Selecione o método de contato</p>
+                    <label for="sim">Sim</label>
+                    <input type="radio" id="sim" value="sim" name="escolha" required="true">
+
+                    <label for="nao">Não</label>
+                    <input type="radio" id="nao" value="nao" name="escolha" required="true">
+                    <button type="submit">Enviar</button>
+
+                 </footer>
+                </form>
+            </div>
+    </main>
+
+    
 </body>
 </html>
